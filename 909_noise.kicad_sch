@@ -2307,12 +2307,6 @@
 		)
 	)
 	(junction
-		(at 135.89 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2a920d23-ed22-48ea-8742-9881d4ca0eb1")
-	)
-	(junction
 		(at 105.41 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2365,8 +2359,8 @@
 		(uuid "5008b889-bac5-4ff7-b315-114f4ea75efd")
 	)
 	(no_connect
-		(at 106.68 92.71)
-		(uuid "c889e9ea-0ae6-4315-ad45-5284acc22256")
+		(at 160.02 87.63)
+		(uuid "b8670d31-e14f-401b-890b-a3112c050f06")
 	)
 	(no_connect
 		(at 207.01 95.25)
@@ -2394,16 +2388,6 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 87.63) (xy 177.8 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0dc1a36f-28a0-424b-b831-d7be1a8bf388")
-	)
-	(wire
-		(pts
 			(xy 175.26 30.48) (xy 175.26 31.75)
 		)
 		(stroke
@@ -2424,7 +2408,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 38.1) (xy 135.89 38.1)
+			(xy 130.81 38.1) (xy 140.97 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2524,16 +2508,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 38.1) (xy 135.89 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "47e2adb2-6b9c-4131-99c1-699a048b6847")
-	)
-	(wire
-		(pts
 			(xy 222.25 107.95) (xy 219.71 107.95)
 		)
 		(stroke
@@ -2621,16 +2595,6 @@
 			(type default)
 		)
 		(uuid "6938167e-14fb-4a7a-8965-930d526114ed")
-	)
-	(wire
-		(pts
-			(xy 135.89 46.99) (xy 135.89 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6af315f5-cb11-49c4-b80a-a9ffc328d788")
 	)
 	(wire
 		(pts
@@ -2764,6 +2728,16 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 92.71) (xy 106.68 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a04c7436-9da7-49cb-a027-e6206c7ac1f0")
+	)
+	(wire
+		(pts
 			(xy 147.32 123.19) (xy 147.32 124.46)
 		)
 		(stroke
@@ -2851,16 +2825,6 @@
 			(type default)
 		)
 		(uuid "ba0cb5a1-aa7c-451b-9a1e-8e4e9df5f80d")
-	)
-	(wire
-		(pts
-			(xy 135.89 38.1) (xy 140.97 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "baa48a16-133f-4aab-9e54-bcbabd412403")
 	)
 	(wire
 		(pts
@@ -3000,6 +2964,17 @@
 		)
 		(uuid "d835ffdb-4cec-4ea6-80dd-dffd80775022")
 	)
+	(text "no explicit ouput capacitor: \nother ICs have plenty of bulk capacitance and it's a small board."
+		(exclude_from_sim no)
+		(at 96.774 25.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "673eed4f-0799-45cf-88a5-526b2407a2f2")
+	)
 	(label "noise_12v"
 		(at 224.79 38.1 0)
 		(fields_autoplaced yes)
@@ -3056,13 +3031,13 @@
 		(uuid "c294a597-5451-4974-9aa2-c0cc13f204b1")
 	)
 	(label "noise_3v3"
-		(at 177.8 87.63 180)
+		(at 95.25 92.71 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "e3c1f1a0-053e-4550-a0d8-d1705ca114ec")
 	)
@@ -3647,7 +3622,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical_SMD_Pin1Left"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 246.38 38.1 0)
 			(effects
 				(font
@@ -4128,76 +4103,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 135.89 43.18 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "52029128-2220-4dca-bfc1-6f63c14aef0b")
-		(property "Reference" "C6"
-			(at 139.7 41.9099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100n"
-			(at 139.7 44.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 134.9248 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 135.89 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "239125f4-8647-4fec-93b3-43ea5720a23b")
-		)
-		(pin "2"
-			(uuid "88162a91-7dbd-4a8f-ac7d-365a7d79ff7e")
-		)
-		(instances
-			(project "909_noise"
-				(path "/5bcbc02e-668e-4985-8828-3c42b1486717"
-					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 50.8 43.18 270)
 		(unit 1)
@@ -4465,72 +4370,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 135.89 48.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "826b7ddc-a466-48d0-a021-d0015c706e87")
-		(property "Reference" "#PWR022"
-			(at 135.89 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 135.89 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 135.89 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 135.89 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0ced2fa0-0d0f-4e8e-a06c-a14983e9a004")
-		)
-		(instances
-			(project "909_noise"
-				(path "/5bcbc02e-668e-4985-8828-3c42b1486717"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Comparator:MCP6561R")
 		(at 210.82 38.1 0)
 		(unit 1)
@@ -4602,72 +4441,6 @@
 			(project ""
 				(path "/5bcbc02e-668e-4985-8828-3c42b1486717"
 					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 175.26 21.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8da7352e-f11f-4400-89cb-4ab558aa5818")
-		(property "Reference" "#PWR016"
-			(at 175.26 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 175.26 16.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 175.26 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 175.26 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 175.26 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1d2a8e2f-8675-41cb-b57f-7f60d2e2f98a")
-		)
-		(instances
-			(project "909_noise"
-				(path "/5bcbc02e-668e-4985-8828-3c42b1486717"
-					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -5703,7 +5476,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 27.94 40.64 0)
 			(effects
 				(font
@@ -5901,6 +5674,72 @@
 			(project "909_noise"
 				(path "/5bcbc02e-668e-4985-8828-3c42b1486717"
 					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 175.26 21.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1f1d6b5-addd-40ff-afd4-b7cca5a11cff")
+		(property "Reference" "#PWR016"
+			(at 175.26 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 175.26 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 175.26 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2c7acc41-9c38-4819-93f5-890218b151b9")
+		)
+		(instances
+			(project "909_noise"
+				(path "/5bcbc02e-668e-4985-8828-3c42b1486717"
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
