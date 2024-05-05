@@ -6254,7 +6254,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Conn_ARM_JTAG_SWD_10"
+		(property "Value" "3220-10-0300-00"
 			(at 231.14 91.4399 0)
 			(effects
 				(font
@@ -6263,7 +6263,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD"
+		(property "Footprint" "Connector_CNC_Tech:CNC_Tech_3220-10-0300-00_2x05_P1.27mm_Vertical"
 			(at 219.71 90.17 0)
 			(effects
 				(font
