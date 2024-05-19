@@ -79,6 +79,7 @@
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -446,7 +447,20 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "gkeeth-dblib - BJTs",
+      "gkeeth-dblib - Capacitors",
+      "gkeeth-dblib - Diodes",
+      "gkeeth-dblib - Graphics",
+      "gkeeth-dblib - LEDs",
+      "gkeeth-dblib - Microcontrollers",
+      "gkeeth-dblib - Opamps",
+      "gkeeth-dblib - Resistors",
+      "gkeeth-dblib - Voltage Regulators",
+      "gkeeth-dblib - Switches",
+      "gkeeth-dblib - Comparators",
+      "gkeeth-dblib - Connectors"
+    ]
   },
   "meta": {
     "filename": "909_noise.kicad_pro",
@@ -604,6 +618,144 @@
           "label": "Description",
           "name": "Description",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DPN 2",
+          "name": "DPN 2",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Distributor 1",
+          "name": "Distributor 1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Distributor 2",
+          "name": "Distributor 2",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DPN 1",
+          "name": "DPN 1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Composition",
+          "name": "Composition",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Core",
+          "name": "Core",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Forward Voltage",
+          "name": "Forward Voltage",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Diode Configuration",
+          "name": "Diode Configuration",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Color",
+          "name": "Color",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Output Current",
+          "name": "Output Current",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Output Voltage",
+          "name": "Output Voltage",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Dielectric",
+          "name": "Dielectric",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Power Rating",
+          "name": "Power Rating",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Resistance",
+          "name": "Resistance",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Speed",
+          "name": "Speed",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Tolerance",
+          "name": "Tolerance",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Voltage Rating",
+          "name": "Voltage Rating",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Capacitance",
+          "name": "Capacitance",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Number of Units",
+          "name": "Number of Units",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Output Type",
+          "name": "Output Type",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -659,7 +811,7 @@
   ],
   "text_variables": {
     "project": "909 Noise Board",
-    "rev": "0",
+    "rev": "0.1",
     "url": "https://github.com/gkeeth/909-noise"
   }
 }
