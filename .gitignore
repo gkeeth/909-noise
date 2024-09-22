@@ -6,3 +6,9 @@ fp-info-cache
 
 *.zip
 *.xml
+
+*.a
+*.o
+*.d
+*.elf
+*.bin

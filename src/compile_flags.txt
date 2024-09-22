@@ -1,0 +1,5 @@
+-Wall
+-D
+STM32G0
+-I
+libopencm3/include/
