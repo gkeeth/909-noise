@@ -16,6 +16,7 @@ International License][cc-by-sa].
 [![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
 
 Code is licensed under the MIT license.
+[Greatest](https://github.com/silentbicycle/greatest) is licensed under ISC license.
 
 [![License: MIT][mit-shield]][mit-link]
 
