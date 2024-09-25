@@ -4,6 +4,12 @@
 *.kicad_prl
 fp-info-cache
 
+bom/
+fab/
+doc/
+sch/
+reports/
+
 *.zip
 *.xml
 
