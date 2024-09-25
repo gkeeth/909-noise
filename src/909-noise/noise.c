@@ -17,10 +17,19 @@
 volatile uint32_t counter = 0;
 
 void tim34_isr(void) {
-    // TODO: LFSR
     if (timer_interrupt_source(TIM_NOISE, TIM_SR_UIF)) {
-        gpio_set(PORT_NOISE, PIN_NOISE);
-        gpio_clear(PORT_NOISE, PIN_NOISE);
+        static uint32_t lfsr = 0xFFFFFFFF;
+        // taps are 31 (output) and 13
+        uint32_t tap1 = (lfsr >> 30) & 0x1;
+        uint32_t tap2 = (lfsr >> 12) & 0x1;
+        uint32_t xor = tap1 ^ tap2;
+        lfsr = (lfsr << 1) | xor;
+        if (tap1) { // bit 31 is output
+            gpio_set(PORT_NOISE, PIN_NOISE);
+        } else {
+            gpio_clear(PORT_NOISE, PIN_NOISE);
+        }
+
         timer_clear_flag(TIM_NOISE, TIM_SR_UIF);
     }
 }
