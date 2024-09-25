@@ -6,10 +6,11 @@
 #include <libopencm3/cm3/nvic.h>
 #include <libopencm3/cm3/systick.h>
 
+#include "lfsr.h"
+
 // LED is PB0/PB1/PA8/PA11/PA9, and we pick PB0
 #define PORT_LED GPIOB
-#define PIN_LED GPIO0
-// noise pin is PC14/PB7/PB8/PB9, and we pick PB7
+#define PIN_LED GPIO0 // noise pin is PC14/PB7/PB8/PB9, and we pick PB7
 #define PORT_NOISE GPIOB
 #define PIN_NOISE GPIO7
 #define TIM_NOISE TIM3
@@ -19,12 +20,9 @@ volatile uint32_t counter = 0;
 void tim34_isr(void) {
     if (timer_interrupt_source(TIM_NOISE, TIM_SR_UIF)) {
         static uint32_t lfsr = 0xFFFFFFFF;
-        // taps are 31 (output) and 13
-        uint32_t tap1 = (lfsr >> 30) & 0x1;
-        uint32_t tap2 = (lfsr >> 12) & 0x1;
-        uint32_t xor = tap1 ^ tap2;
-        lfsr = (lfsr << 1) | xor;
-        if (tap1) { // bit 31 is output
+        uint32_t output;
+        lfsr_step(&lfsr, &output);
+        if (output) {
             gpio_set(PORT_NOISE, PIN_NOISE);
         } else {
             gpio_clear(PORT_NOISE, PIN_NOISE);

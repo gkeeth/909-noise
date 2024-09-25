@@ -1,7 +1,7 @@
 PROJECT = noise
 BUILD_DIR = bin
 
-CFILES = noise.c
+CFILES = noise.c lfsr.c
 
 DEVICE=stm32g030j6m6
 
@@ -14,7 +14,7 @@ TEST_DIR = test
 TEST_BUILD_DIR = $(TEST_DIR)/$(BUILD_DIR)
 TEST_TARGET = $(TEST_BUILD_DIR)/test
 TEST_INCLUDES = -I$(TEST_DIR) -I.
-TEST_CFILES =
+TEST_CFILES = lfsr.c
 TEST_SRC = $(wildcard $(TEST_DIR)/*.c)
 TEST_CFILE_OBJS := $(patsubst %.c,$(TEST_BUILD_DIR)/%.o,$(TEST_CFILES))
 TEST_OBJS := $(patsubst %.c,$(TEST_BUILD_DIR)/%.o,$(notdir $(TEST_SRC)))

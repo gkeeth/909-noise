@@ -1,13 +1,26 @@
 #include <stdbool.h>
 #include "greatest.h"
 
-TEST dummy(void) {
-    ASSERT(true);
+#include "lfsr.h"
+
+TEST test_lfsr(void) {
+    uint32_t lfsr = 0xFFFFFFFF;
+    uint32_t output;
+    lfsr_step(&lfsr, &output);
+    ASSERT_EQ(lfsr, 0xFFFFFFFE);
+    lfsr_step(&lfsr, &output);
+    ASSERT_EQ(lfsr, 0xFFFFFFFC);
+    for (int i = 2; i < 13; ++i) {
+        lfsr_step(&lfsr, &output);
+    }
+    ASSERT_EQ(lfsr, 0xFFFFE000);
+    lfsr_step(&lfsr, &output);
+    ASSERT_EQ(lfsr, 0xFFFFC001);
     PASS();
 }
 
 SUITE(testsuite) {
-    RUN_TEST(dummy);
+    RUN_TEST(test_lfsr);
 }
 
 GREATEST_MAIN_DEFS();
