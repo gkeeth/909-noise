@@ -18,3 +18,4 @@ reports/
 *.d
 *.elf
 *.bin
+src/909-noise/test/bin/

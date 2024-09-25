@@ -3,3 +3,5 @@
 STM32G0
 -I
 libopencm3/include/
+-I
+noise/test/

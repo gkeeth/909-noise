@@ -1,7 +1,8 @@
+#include <stdbool.h>
 #include "greatest.h"
 
 TEST dummy(void) {
-    ASSERT_TRUE(true);
+    ASSERT(true);
     PASS();
 }
 
@@ -9,7 +10,9 @@ SUITE(testsuite) {
     RUN_TEST(dummy);
 }
 
-int main(int argv, char **argv) {
+GREATEST_MAIN_DEFS();
+
+int main(int argc, char **argv) {
     GREATEST_MAIN_BEGIN();
 
     RUN_SUITE(testsuite);

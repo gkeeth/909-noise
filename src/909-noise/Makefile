@@ -12,9 +12,9 @@ OPENCM3_DIR=../libopencm3
 
 TEST_DIR = test
 TEST_BUILD_DIR = $(TEST_DIR)/$(BUILD_DIR)
-GENERATED_BINS += $(TEST_BUILD_DIR)
+TEST_TARGET = $(TEST_BUILD_DIR)/test
 TEST_INCLUDES = -I$(TEST_DIR) -I.
-TEST_CFILES = noise.c
+TEST_CFILES =
 TEST_SRC = $(wildcard $(TEST_DIR)/*.c)
 TEST_CFILE_OBJS := $(patsubst %.c,$(TEST_BUILD_DIR)/%.o,$(TEST_CFILES))
 TEST_OBJS := $(patsubst %.c,$(TEST_BUILD_DIR)/%.o,$(notdir $(TEST_SRC)))
@@ -35,6 +35,7 @@ $(TEST_BUILD_DIR)/%.o: %.c
 	gcc $(TEST_CFLAGS) $(TEST_CPPFLAGS) $(TEST_INCLUDES) -o $@ -c $<
 
 $(TEST_TARGET): $(TEST_DEPS)
+	@printf "  CC\t$<\n"
 	gcc -o $@ $^
 
 test: $(TEST_TARGET)
@@ -45,3 +46,5 @@ test: $(TEST_TARGET)
 include $(OPENCM3_DIR)/mk/genlink-config.mk
 include ../rules.mk
 include $(OPENCM3_DIR)/mk/genlink-rules.mk
+
+GENERATED_BINS += $(TEST_BUILD_DIR)
