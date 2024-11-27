@@ -43,9 +43,9 @@
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
-        "silk_text_size_h": 1.0,
-        "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.1,
+        "silk_text_size_h": 0.8,
+        "silk_text_size_v": 0.8,
+        "silk_text_thickness": 0.08,
         "silk_text_upright": false,
         "zones": {
           "min_clearance": 0.5
@@ -811,7 +811,7 @@
   ],
   "text_variables": {
     "project": "909 Noise Board",
-    "rev": "0.1",
+    "rev": "0.2",
     "url": "https://github.com/gkeeth/909-noise"
   }
 }
