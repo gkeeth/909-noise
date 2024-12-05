@@ -525,6 +525,8 @@
     },
     "net_colors": null,
     "netclass_assignments": {
+      "/noise_12v": "noise",
+      "/noise_3v3": "noise",
       "Net-(C6-Pad1)": "noise",
       "Net-(R4-Pad2)": "noise",
       "Net-(U4A-+)": "noise",
@@ -542,7 +544,7 @@
       },
       {
         "netclass": "noise",
-        "pattern": "noise*"
+        "pattern": "*noise*"
       },
       {
         "netclass": "power",

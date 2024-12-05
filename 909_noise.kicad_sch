@@ -6,7 +6,7 @@
 	(paper "A")
 	(title_block
 		(title "${project}")
-		(date "2024-11-27")
+		(date "2024-12-05")
 		(rev "${rev}")
 		(company "G. Keeth")
 		(comment 1 "${url}")
@@ -5763,6 +5763,16 @@
 			(justify left bottom)
 		)
 		(uuid "0a3b383a-422c-4e93-8faf-43cd8bc5cbb3")
+		(property "Netclass" "noise"
+			(at 220.98 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "swdio"
 		(at 177.8 123.19 180)
@@ -5818,6 +5828,16 @@
 			(justify left bottom)
 		)
 		(uuid "e3c1f1a0-053e-4550-a0d8-d1705ca114ec")
+		(property "Netclass" "noise"
+			(at 95.25 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "~{reset}"
 		(at 199.39 115.57 0)
