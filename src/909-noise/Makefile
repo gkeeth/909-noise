@@ -4,6 +4,7 @@ BUILD_DIR = bin
 CFILES = noise.c lfsr.c
 
 DEVICE=stm32g030j6m6
+OOCD_FILE=../stm32g0.cfg
 
 # You shouldn't have to edit anything below here.
 VPATH += $(SHARED_DIR)
