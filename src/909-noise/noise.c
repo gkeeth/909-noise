@@ -73,11 +73,10 @@ static void setup(void) {
 
 
 int main(void) {
-    uint32_t last_flash_millis;
-    const uint32_t BLINK_DELAY = 500;
-
     setup();
-    last_flash_millis = millis();
+
+    const uint32_t BLINK_DELAY = 500;
+    uint32_t last_flash_millis = millis();
 
     while(1) {
         if ((millis() - last_flash_millis) > BLINK_DELAY) {
@@ -86,7 +85,6 @@ int main(void) {
         }
     }
 
-    while (1);
     return 0;
 }
 
