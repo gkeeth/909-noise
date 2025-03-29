@@ -62,7 +62,7 @@ static void setup(void) {
     // setup timer
     rcc_periph_clock_enable(RCC_TIM3);
     // rcc_ahb_frequency = 64MHz
-    // desired noise frequency = ~300kHz
+    // desired noise fclk = ~300kHz
     // period of 213 - 1 gives 300.5kHz
     timer_set_prescaler(TIM_NOISE, 0);
     timer_set_period(TIM_NOISE, 212);
