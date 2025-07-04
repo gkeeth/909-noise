@@ -1,0 +1,273 @@
+{
+  "jobs": [
+    {
+      "description": "",
+      "id": "d460c180-1b28-41f5-8dd0-96e1c2b5525c",
+      "settings": {
+        "black_and_white": true,
+        "create_gerber_job_file": true,
+        "crossout_dnp_footprints_on_fab_layers": true,
+        "description": "",
+        "disable_aperture_macros": false,
+        "drawing_sheet": "",
+        "drill_shape": "full",
+        "hide_dnp_footprints_on_fab_layers": false,
+        "include_netlist_attributes": true,
+        "layers": [
+          "B.Cu",
+          "B.Mask",
+          "B.Paste",
+          "B.SilkS",
+          "B.CrtYd",
+          "B.Fab",
+          "In30.Cu",
+          "In29.Cu",
+          "In28.Cu",
+          "In27.Cu",
+          "In26.Cu",
+          "In25.Cu",
+          "In24.Cu",
+          "In23.Cu",
+          "In22.Cu",
+          "In21.Cu",
+          "In20.Cu",
+          "In19.Cu",
+          "In18.Cu",
+          "In17.Cu",
+          "In16.Cu",
+          "In15.Cu",
+          "In14.Cu",
+          "In13.Cu",
+          "In12.Cu",
+          "In11.Cu",
+          "In10.Cu",
+          "In9.Cu",
+          "In8.Cu",
+          "In7.Cu",
+          "In6.Cu",
+          "In5.Cu",
+          "In4.Cu",
+          "In3.Cu",
+          "In2.Cu",
+          "In1.Cu",
+          "F.Cu",
+          "F.Mask",
+          "F.Paste",
+          "F.SilkS",
+          "F.CrtYd",
+          "F.Fab",
+          "Edge.Cuts"
+        ],
+        "layers_to_include_on_all_layers": [],
+        "mirror": false,
+        "negative": false,
+        "output_filename": "",
+        "plot_drawing_sheet": false,
+        "plot_footprint_values": true,
+        "plot_pad_numbers": false,
+        "plot_ref_des": true,
+        "precision": 5,
+        "sketch_dnp_footprints_on_fab_layers": true,
+        "sketch_pads_on_fab_layers": false,
+        "subtract_solder_mask_from_silk": false,
+        "use_drill_origin": false,
+        "use_protel_file_extension": false,
+        "use_x2_format": true
+      },
+      "type": "pcb_export_gerbers"
+    },
+    {
+      "description": "",
+      "id": "2650ce99-e6e8-4343-9d93-7905e40aba59",
+      "settings": {
+        "description": "",
+        "drill_origin": "abs",
+        "excellon.combine_pth_npth": true,
+        "excellon.minimal_header": false,
+        "excellon.mirror_y": false,
+        "excellon.oval_drill_route": false,
+        "format": "excellon",
+        "generate_map": false,
+        "gerber_precision": 5,
+        "map_format": "pdf",
+        "output_dir": "",
+        "units": "in",
+        "zero_format": "decimal"
+      },
+      "type": "pcb_export_drill"
+    },
+    {
+      "description": "",
+      "id": "845640fd-015d-4751-8a02-fed0724b8c43",
+      "settings": {
+        "bom_format_preset_name": "CSV",
+        "bom_preset_name": "",
+        "description": "",
+        "exclude_dnp": false,
+        "field_delimiter": ",",
+        "fields_group_by": [
+          "Value",
+          "Footprint",
+          "${DNP}"
+        ],
+        "fields_labels": [
+          "#",
+          "Qty",
+          "Reference",
+          "Value",
+          "Datasheet",
+          "Footprint",
+          "Description",
+          "Capacitance",
+          "Circuits",
+          "Color",
+          "Composition",
+          "Core",
+          "DPN 2",
+          "Dielectric",
+          "Diode Configuration",
+          "Distributor 2",
+          "Family",
+          "Forward Voltage",
+          "Manufacturer",
+          "MPN",
+          "DPN 1",
+          "Number of Units",
+          "Output Current",
+          "Output Type",
+          "Output Voltage",
+          "Package",
+          "Power Rating",
+          "Resistance",
+          "Speed",
+          "Tolerance",
+          "Voltage Rating",
+          "Distributor 1",
+          "DNP"
+        ],
+        "fields_ordered": [
+          "${ITEM_NUMBER}",
+          "${QUANTITY}",
+          "Reference",
+          "Value",
+          "Datasheet",
+          "Footprint",
+          "__Description",
+          "__Capacitance",
+          "__Circuits",
+          "__Color",
+          "__Composition",
+          "__Core",
+          "__DPN 2",
+          "__Dielectric",
+          "__Diode Configuration",
+          "__Distributor 2",
+          "__Family",
+          "__Forward Voltage",
+          "Manufacturer",
+          "MPN",
+          "DPN 1",
+          "__Number of Units",
+          "__Output Current",
+          "__Output Type",
+          "__Output Voltage",
+          "__Package",
+          "__Power Rating",
+          "__Resistance",
+          "__Speed",
+          "__Tolerance",
+          "__Voltage Rating",
+          "Distributor 1",
+          "${DNP}"
+        ],
+        "filter_string": "",
+        "include_excluded_from_bom": false,
+        "keep_line_breaks": false,
+        "keep_tabs": false,
+        "output_filename": "${PROJECTNAME}_bom.csv",
+        "ref_delimiter": ",",
+        "ref_range_delimiter": "",
+        "sort_asc": true,
+        "sort_field": "${ITEM_NUMBER}",
+        "string_delimiter": "\""
+      },
+      "type": "sch_export_bom"
+    },
+    {
+      "description": "",
+      "id": "99d9d0fc-1144-46c3-81a2-4b08f750a75c",
+      "settings": {
+        "black_and_white": false,
+        "color_theme": "KiCad Default",
+        "description": "",
+        "drawing_sheet": "",
+        "format": "pdf",
+        "hpgl_page_size": "default",
+        "hpgl_pen_size": 1.016,
+        "hpgl_plot_origin": "A3",
+        "min_pen_width": 847,
+        "output_dir": "",
+        "page_size": "auto",
+        "pdf_hierarchical_links": true,
+        "pdf_metadata": true,
+        "pdf_property_popups": true,
+        "plot_all": true,
+        "plot_drawing_sheet": true,
+        "use_background_color": false
+      },
+      "type": "sch_export_plot_pdf"
+    }
+  ],
+  "meta": {
+    "version": 1
+  },
+  "outputs": [
+    {
+      "description": "Fab outputs",
+      "id": "f6ee7c2c-90a9-4212-8b6a-923753cf7900",
+      "only": [
+        "d460c180-1b28-41f5-8dd0-96e1c2b5525c",
+        "2650ce99-e6e8-4343-9d93-7905e40aba59"
+      ],
+      "settings": {
+        "output_path": "fab/"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "Gerber zip",
+      "id": "82bb3c6d-bd5d-4cd2-ba38-28a34e16a426",
+      "only": [
+        "d460c180-1b28-41f5-8dd0-96e1c2b5525c",
+        "2650ce99-e6e8-4343-9d93-7905e40aba59"
+      ],
+      "settings": {
+        "format": "zip",
+        "output_path": "fab/${PROJECTNAME}.zip"
+      },
+      "type": "archive"
+    },
+    {
+      "description": "Schematic PDF",
+      "id": "818eacd7-4354-4100-b314-b737d4af5bfd",
+      "only": [
+        "99d9d0fc-1144-46c3-81a2-4b08f750a75c"
+      ],
+      "settings": {
+        "output_path": "."
+      },
+      "type": "folder"
+    },
+    {
+      "description": "BOM",
+      "id": "cbd86435-b6d8-4832-93e3-6a0fff0c7ccc",
+      "only": [
+        "845640fd-015d-4751-8a02-fed0724b8c43"
+      ],
+      "settings": {
+        "output_path": "bom/"
+      },
+      "type": "folder"
+    }
+  ]
+}
