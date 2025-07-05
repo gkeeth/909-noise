@@ -12469,6 +12469,18 @@
 			)
 		)
 	)
+	(gr_text "JLCJLCJLCJLC"
+		(at 66.4 48.7 0)
+		(layer "B.SilkS")
+		(uuid "ba94f83a-0d6c-4e44-85b5-caacf49e624f")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(gr_text_box "${project} r${rev}\n${url}\nG. Keeth ${ISSUE_DATE}"
 		(start 47.45 34.65)
 		(end 72.15 39.2)
